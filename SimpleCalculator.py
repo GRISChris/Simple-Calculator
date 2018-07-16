@@ -50,15 +50,12 @@ def CalcReset(Num1, RetryNum):
 
 
 while FirstNum == False:
-	Num1 = float(input("pls input number 1\n"))
 	try:
+		Num1 = float(input("pls input number 1\n"))
 		FirstNum == True
 		while SecondNum == False:
 			Num2 = float(input("pls input number 2\n"))
-			try:
-				SecondNum == True
-				Calculation(Num1, Num2)
-			except ValueError:
-				print ("can u not")
+			SecondNum == True
+			Calculation(Num1, Num2)
 	except ValueError:
 		print("no\n")
