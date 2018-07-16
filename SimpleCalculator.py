@@ -1,4 +1,6 @@
-print("Calculator")
+#despacito
+
+print("Calculator 2")
 
 FirstNum = False
 SecondNum = False
@@ -6,8 +8,7 @@ RetryNum = False
 RestartQuestion = False
 
 def retry(Num1, RestartQuestion):
-	retry = input("are you finished calculating this number? [Y/N]\n")
-	retry = retry.lower()
+	retry = input("are you finished calculating this number? [Y/N]\n").lower()
 	while RestartQuestion == False:
 		if retry in ("y", "yes"):
 			quit()
@@ -21,28 +22,20 @@ def Calculation(Num1, Num2):
 	if Ask in ("+", "-", "*", "/", "%"):
 		if Ask == "+":
 			Num1 = Num1 + Num2
-			print("The Result is %f" % Num1)
-			retry(Num1, False)
 		elif Ask == "-":
 			Num1 = Num1 - Num2
-			print("The Result is %f" % Num1)
-			retry(Num1, False)
 		elif Ask == "*":
 			Num1 = Num1 * Num2
-			print("The Result is %f" % Num1)
-			retry(Num1, False)	
 		elif Ask == "/":
 			Num1 = Num1/Num2
-			print("The Result is %f" % Num1)
-			retry(Num1, False)
 		elif Ask == "%":
 			Num1 = Num1%Num2
-			print("The Result is %f" % Num1)
-			retry(Num1, False)
+		
+		print("The Result is %f" % Num1)
+		retry(Num1, False)
 	else:
 		print("what")
 		Calculation(Num1, Num2)
-				
 
 
 def CalcReset(Num1, RetryNum):
