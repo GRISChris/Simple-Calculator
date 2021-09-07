@@ -1,2 +1,4 @@
 # Simple-Calculator
-crappy overcoded simple cmd calculator written in python3
+simple cmd calculator written in python3
+
+might be a little overly coded but whatever
